@@ -2,11 +2,12 @@ import React from 'react';
 
 class AddFood extends React.Component {
   state = {
-    name: '',
-    calories: 0,
-    image: '',
-    quantity: 0,
-    foodList: [],
+    newFood: {
+      name: '',
+      calories: 0,
+      image: '',
+      quantity: 0,
+    },
   };
 
   handleChange = (event) => {
