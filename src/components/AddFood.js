@@ -29,7 +29,7 @@ class AddFood extends React.Component {
             type="text"
             placeholder="Name"
             name="name"
-            value={this.state.name}
+            value={this.state.newFood.name}
             onChange={this.handleChange}
           />
           <input
@@ -37,7 +37,7 @@ class AddFood extends React.Component {
             type="number"
             placeholder="Quantity"
             name="quantity"
-            value={this.state.quantity}
+            value={this.state.newFood.quantity}
             onChange={this.handleChange}
           />
           <input
@@ -45,7 +45,7 @@ class AddFood extends React.Component {
             type="number"
             placeholder="Calories"
             name="calories"
-            value={this.state.calories}
+            value={this.state.newFood.calories}
             onChange={this.handleChange}
           />
           <input
@@ -53,7 +53,7 @@ class AddFood extends React.Component {
             type="text"
             placeholder="Image"
             name="image"
-            value={this.state.image}
+            value={this.state.newFood.image}
             onChange={this.handleChange}
           />
           <button className="button is-info">Submit</button>
