@@ -20,20 +20,6 @@ class AddFood extends React.Component {
     event.preventDefault();
   };
 
-  handleClick = () => {
-    const clone = [...this.state.foodList];
-
-    const obj = {
-      name: this.state.name,
-      calories: this.state.calories,
-      image: this.state.image,
-      quantity: this.state.quantity,
-    };
-    clone.push(obj);
-    this.setState({ foodList: clone });
-    console.log(clone);
-  };
-
   render() {
     return (
       <div>
@@ -70,9 +56,7 @@ class AddFood extends React.Component {
             value={this.state.image}
             onChange={this.handleChange}
           />
-          <button className="button is-info" onClick={this.handleClick}>
-            Submit
-          </button>
+          <button className="button is-info">Submit</button>
         </form>
       </div>
     );
